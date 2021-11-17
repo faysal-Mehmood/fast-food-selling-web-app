@@ -436,7 +436,7 @@ section.top-products .food-slider .card button {
   -o-border-radius: 4px;
   display: flex;
   align-items: center;
-  width: 50%;
+  padding-right: 10px;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -495,15 +495,13 @@ section.top-products .food-slider .card button:hover {
   margin-top: 2rem;
 }
 /* about us seaction*/
-section.about {
-  height: 550px;
-}
+
 .justify-right {
   justify-content: right;
 }
 section.about .container .about-content img {
   height: 280px;
-  width: 500px;
+  /* width: 500px; */
   object-fit: contain;
 }
 section.about .container .about-content .about-meal {
@@ -533,7 +531,7 @@ section.services {
 
 section.services .container .service-card {
   width: 280px;
-  height: 210px;
+  height: auto;
   background: var(--pure);
   border-radius: 0.5rem;
   padding: 0.75rem;
@@ -615,7 +613,7 @@ section.blog .blog-content {
 }
 section.blog .container .blog-content .blog-card {
   width: 350px;
-  height: 450px;
+
   display: flex;
   flex-direction: column;
   margin-right: 2rem;
@@ -726,7 +724,7 @@ section.contact-area .contact-wrapper {
   align-items: center;
 }
 section.contact-area {
-  padding-top: 0;
+  padding: 0;
 }
 section.contact-area .contact-wrapper .ct-area {
   display: flex;
@@ -741,6 +739,7 @@ section.contact-area .contact-wrapper .ct-area > div {
 section.contact-area .contact-wrapper .ct-area > div > span:first-child {
   font-family: Raleway-bold;
 }
+
 /* footer section*/
 
 footer {
@@ -808,6 +807,13 @@ footer .container .box a:hover {
   .hero .welcome {
     margin-top: -46px;
   }
+  .box .instagram-wrap > div {
+    width: calc(1 / 2 * 100% - (1-1 / 2) * 6px);
+    margin-bottom: 10px;
+  }
+  section.services .container .service-card img {
+    left: 50px;
+  }
 }
 
 /* hero section */
@@ -823,5 +829,19 @@ footer .container .box a:hover {
   }
   .hero .welcome {
     margin-top: 0px;
+  }
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container {
+    flex-direction: column !important;
+    margin: 0px;
+    padding: 40px;
+  }
+}
+@media (max-width: 1087px) {
+  section.contact-area .contact {
+    width: 60%;
   }
 }
