@@ -505,8 +505,6 @@ section.about .container .about-content img {
   object-fit: contain;
 }
 section.about .container .about-content .about-meal {
-  margin-left: 50px;
-  width: 550px;
 }
 section.about .container .about-content .about-meal h2 {
   margin-bottom: 1.7rem;
@@ -520,7 +518,7 @@ section.about .container .about-content .about-meal p {
 }
 
 section.services {
-  height: 500px;
+  /* height: 500px; */
   background: var(--light);
 }
 .services-content {
@@ -714,6 +712,7 @@ section.subscribe .input-wrap button:hover {
 /* contact area */
 section.contact-area .contact {
   padding: 4rem 0;
+  max-width: 100%;
 }
 section.contact-area .contact {
   width: 50%;
@@ -725,6 +724,9 @@ section.contact-area .contact-wrapper {
 }
 section.contact-area {
   padding: 0;
+}
+section.contact-area .map iframe {
+  max-width: 100%;
 }
 section.contact-area .contact-wrapper .ct-area {
   display: flex;
@@ -840,8 +842,27 @@ footer .container .box a:hover {
     padding: 40px;
   }
 }
-@media (max-width: 1087px) {
-  section.contact-area .contact {
-    width: 60%;
+@media screen and (max-width: 992px) {
+  section.services .container .service-card img {
+    left: 27px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-area {
+    flex-direction: column;
+  }
+  .contact-area .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 170px;
+  }
+}
+@media screen and (max-width: 550px) {
+  section.services .services-content .card1 {
+    margin-right: 1rem;
+  }
+  section.services .services-content .card3 {
+    margin-left: 1rem;
   }
 }
