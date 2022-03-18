@@ -825,6 +825,39 @@ footer .container .box a:hover {
     right: -3px !important;
   }
 }
+@media screen and (max-width: 992px) {
+  section.services .container .service-card img {
+    left: 52px;
+  }
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .section-heading {
+    margin-left: 400px;
+  }
+  .contact-area .contact .contact-wrapper {
+    display: block;
+  }
+  .contact .contact-wrapper .ct-area-wrapper {
+    display: flex;
+    align-items: center;
+
+    padding: 0px 70px;
+  }
+  section.contact-area .contact-wrapper .ct-area {
+    margin-right: 50px;
+  }
+  section.contact-area .contact-wrapper .ct-area > div {
+    width: 150px;
+  }
+  .contact-area {
+    flex-direction: column;
+  }
+  .contact-area .map iframe {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .hero .hero-image {
     display: none;
@@ -832,22 +865,13 @@ footer .container .box a:hover {
   .hero .welcome {
     margin-top: 0px;
   }
-  .about-content {
-    flex-direction: column;
-    align-items: center;
-  }
+
   footer .container {
     flex-direction: column !important;
     margin: 0px;
     padding: 40px;
   }
-}
-@media screen and (max-width: 992px) {
-  section.services .container .service-card img {
-    left: 27px;
-  }
-}
-@media screen and (max-width: 768px) {
+
   .contact-area {
     flex-direction: column;
   }
@@ -858,11 +882,30 @@ footer .container .box a:hover {
     margin-left: 170px;
   }
 }
-@media screen and (max-width: 550px) {
-  section.services .services-content .card1 {
-    margin-right: 1rem;
+
+@media screen and (max-width: 830px) {
+  .contact .section-heading {
+    margin-left: 300px;
   }
-  section.services .services-content .card3 {
-    margin-left: 1rem;
+
+  .contact .contact-wrapper .ct-area-wrapper {
+    display: flex;
+    align-items: center;
+
+    padding: 0px 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact .section-heading {
+    margin-left: 50px;
+  }
+  section.contact-area .contact-wrapper .ct-area {
+    margin-right: 26px;
+  }
+  .contact .contact-wrapper .ct-area-wrapper {
+    display: flex;
+    align-items: center;
+
+    padding: 0px 0px;
   }
 }
